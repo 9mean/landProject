@@ -4,25 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment">
-
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.landproject.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_farmFragment"
+            app:destination="@id/farmFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_landFragment"
+            app:destination="@id/landFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_storeFragment"
+            app:destination="@id/storeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/landFragment"
-        android:name="com.example.landproject.LandFragment"
+        android:name="com.example.landproject.fragments.LandFragment"
         android:label="fragment_land"
         tools:layout="@layout/fragment_land" />
     <fragment
         android:id="@+id/farmFragment"
-        android:name="com.example.landproject.FarmFragment"
+        android:name="com.example.landproject.fragments.FarmFragment"
         android:label="fragment_farm"
         tools:layout="@layout/fragment_farm" />
     <fragment
         android:id="@+id/storeFragment"
-        android:name="com.example.landproject.StoreFragment"
+        android:name="com.example.landproject.fragments.StoreFragment"
         android:label="fragment_store"
         tools:layout="@layout/fragment_store" />
-    <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.landproject.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+
 </navigation>

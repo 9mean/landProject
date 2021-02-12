@@ -1,13 +1,14 @@
-package com.example.landproject
+package com.example.landproject.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.landproject.R
 
-class FarmFragment : Fragment() {
 
+class StoreFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -17,7 +18,7 @@ class FarmFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_farm, container, false)
+        return inflater.inflate(R.layout.fragment_store, container, false)
     }
 
 }
