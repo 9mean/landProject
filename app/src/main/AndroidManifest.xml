@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LandProject">
-<!--        <activity android:name=".FarmMapActivity"></activity>-->
+        <activity android:name=".views.activities.LandActivity"></activity>
+        <!-- <activity android:name=".FarmMapActivity"></activity> -->
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld
                app to run.
@@ -20,17 +21,21 @@
         <meta-data
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
-        <activity android:name=".SearchFarmActivity" />
-        <activity android:name=".LoginActivity">
+
+        <activity android:name=".views.activities.FarmMapActivity" />
+        <activity android:name=".views.activities.SearchFarmActivity" />
+        <activity android:name=".views.activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".views.activities.MainActivity" />
         <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->

@@ -1,4 +1,4 @@
-package com.example.landproject.fragments
+package com.example.landproject.views.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

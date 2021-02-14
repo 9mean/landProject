@@ -1,4 +1,4 @@
-package com.example.landproject.viewpagers.farm
+package com.example.landproject.views.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,11 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.landproject.R
 
-class PriceFragment : Fragment() {
 
+class StoreFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -19,6 +18,7 @@ class PriceFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_price, container, false)
+        return inflater.inflate(R.layout.fragment_store, container, false)
     }
+
 }

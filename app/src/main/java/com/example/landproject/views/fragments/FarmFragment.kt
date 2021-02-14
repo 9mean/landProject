@@ -1,4 +1,4 @@
-package com.example.landproject.fragments
+package com.example.landproject.views.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import com.example.landproject.MainActivity
 import com.example.landproject.R
-import com.example.landproject.SearchFarmActivity
+import com.example.landproject.views.activities.SearchFarmActivity
 import com.example.landproject.databinding.FragmentFarmBinding
 
 class FarmFragment : Fragment() {

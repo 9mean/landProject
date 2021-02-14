@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools">
     <data>
         <variable
-            name="activity"
-            type="com.example.landproject.fragments.LandFragment" />
+            name="fragment"
+            type="com.example.landproject.views.fragments.LandFragment" />
     </data>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.landproject.fragments.LandFragment"
+        tools:context=".views.fragments.LandFragment"
         android:id="@+id/landFragment">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -26,6 +26,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:onClick="@{()->fragment.goAddLand()}"
                 android:id="@+id/add_land_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

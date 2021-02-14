@@ -1,12 +1,11 @@
-package com.example.landproject
+package com.example.landproject.views.activities
 
 import android.Manifest
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
-import com.example.landproject.MapApiConst.CLIENT_ID
+import com.example.landproject.repositories.retrofits.MapApiConst.CLIENT_ID
 import com.example.landproject.databinding.ActivityFarmMapBinding
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.*
@@ -25,6 +24,9 @@ class FarmMapActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var locationSource: FusedLocationSource
     private lateinit var locationOverlay: LocationOverlay
     private lateinit var cameraUpdate: CameraUpdate
+
+    var lat:Double=37.5386169
+    var lon:Double=127.082375
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,14 +83,14 @@ class FarmMapActivity : AppCompatActivity(), OnMapReadyCallback {
         naverMap.locationSource = locationSource
         locationOverlay = naverMap.locationOverlay
         //불러온 위치로 카메라설정
-//        cameraUpdate = CameraUpdate.scrollTo(LatLng(lat, lon))
-//            .animate(CameraAnimation.Easing)
-//        naverMap.moveCamera(cameraUpdate)
+        cameraUpdate = CameraUpdate.scrollTo(LatLng(lat, lon))
+                .animate(CameraAnimation.Easing)
+        naverMap.moveCamera(cameraUpdate)
         marker = Marker()
         marker.captionColor = Color.BLUE
         marker.captionText = "선택위치"
 
-        //marker.position = LatLng(lat, lon)
+        marker.position = LatLng(lat, lon)
         marker.map = naverMap
         naverMap.addOnLocationChangeListener { location ->
             Log.d("TAG","${location.latitude}, ${location.longitude}")

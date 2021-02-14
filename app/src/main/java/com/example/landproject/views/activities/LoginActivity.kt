@@ -1,25 +1,16 @@
-package com.example.landproject
+package com.example.landproject.views.activities
 
 import android.content.Intent
-import android.content.pm.PackageInfo
-import android.content.pm.PackageManager
 import android.os.Bundle
-import android.util.Base64
 import android.util.Log
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.lifecycleScope
+import com.example.landproject.GlobalApplication
+import com.example.landproject.R
 import com.example.landproject.databinding.ActivityLoginBinding
 import com.kakao.sdk.auth.LoginClient
 import com.kakao.sdk.auth.model.OAuthToken
 import com.kakao.sdk.user.UserApiClient
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
-import java.security.MessageDigest
-import java.security.NoSuchAlgorithmException
-import kotlin.math.log
 
 
 class LoginActivity : AppCompatActivity() {

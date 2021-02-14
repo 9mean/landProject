@@ -1,12 +1,12 @@
-package com.example.landproject
+package com.example.landproject.views.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
+import com.example.landproject.R
 import com.example.landproject.databinding.ActivitySearchFarmBinding
-import com.example.landproject.viewpagers.FarmViewPagerAdapter
-import com.example.landproject.viewpagers.farm.CropFragment
+import com.example.landproject.views.viewpagers.FarmViewPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 
 class SearchFarmActivity : AppCompatActivity() {

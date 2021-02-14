@@ -6,12 +6,12 @@
     <data>
         <variable
             name="fragment"
-            type="com.example.landproject.fragments.FarmFragment" />
+            type="com.example.landproject.views.fragments.FarmFragment" />
     </data>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.landproject.fragments.FarmFragment"
+        tools:context=".views.fragments.FarmFragment"
         android:id="@+id/farmFragment">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

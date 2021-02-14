@@ -6,7 +6,7 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.landproject.fragments.MainFragment"
+        android:name="com.example.landproject.views.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -21,17 +21,17 @@
     </fragment>
     <fragment
         android:id="@+id/landFragment"
-        android:name="com.example.landproject.fragments.LandFragment"
+        android:name="com.example.landproject.views.fragments.LandFragment"
         android:label="fragment_land"
         tools:layout="@layout/fragment_land" />
     <fragment
         android:id="@+id/farmFragment"
-        android:name="com.example.landproject.fragments.FarmFragment"
+        android:name="com.example.landproject.views.fragments.FarmFragment"
         android:label="fragment_farm"
         tools:layout="@layout/fragment_farm" />
     <fragment
         android:id="@+id/storeFragment"
-        android:name="com.example.landproject.fragments.StoreFragment"
+        android:name="com.example.landproject.views.fragments.StoreFragment"
         android:label="fragment_store"
         tools:layout="@layout/fragment_store" />
 
